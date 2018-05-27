@@ -63,7 +63,7 @@ namespace Lesson_13_3
 
             for (int i = 0; i < bytes.Length; i++)
             {
-                bytes[i] = (byte)((bytes[i] - key % 256 + 256) % 256);
+                bytes[i] = (byte)((bytes[i] - key % 256) % 256);
             }
             File.WriteAllBytes(s, bytes);
         }
